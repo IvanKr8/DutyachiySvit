@@ -1,0 +1,13 @@
+*.log
+logs/
+
+.vscode/
+.idea/
+*.iml
+
+node_modules/
+
+build/
+dist/
+
+.env
