@@ -12,7 +12,7 @@ func NewApp() {
 func (a *App) GetRouter() *http.ServeMux {
 	r := http.NewServeMux()
 
-	r.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {})
+	r.HandleFunc("GET /api/get-products", a.getProducts)
 
 	return r
 }
